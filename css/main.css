@@ -1,0 +1,340 @@
+/* Define the custom font family */
+@font-face {
+    font-family: 'CaramelBurger'; /* Name the font family */
+    src: url('../assets/fonts/Caramelburger.ttf') format('truetype'); /* Specify the path to the font file */
+}
+
+/* Styling for the header image */
+header img {
+    height: 80px; /* Set the height */
+    margin-left: 40px; /* Add margin to the left */
+}
+
+/* Body styling */
+body {
+    height: 175vh; /* Set the height of the body */
+    background-image: url('../assets/images/Mountain\ Background.jpg'); /* Set the background image */
+    background-size: cover; /* Make sure the background image covers the entire viewport */
+    font-family: Helvetica, sans-serif; /* Specify font family */
+    margin-top: 100px; /* Add margin to the top */
+    padding: 30px; /* Add padding */
+}
+
+/* Styling for the main profile image */
+.MainProfileImage img {
+    width: 20vw; /* Set the width */
+    height: 20vh; /* Set the height */
+    border-radius: 50%; /* Apply border radius for a circular shape */
+    display: block; /* Make the image a block element */
+    margin-left: auto; /* Auto margin on the left */
+    margin-right: auto; /* Auto margin on the right */
+    opacity: 1; /* Set the opacity */
+    min-width: 100px; /* Set minimum width */
+    min-height: 100px; /* Set minimum height */
+}
+
+/* Spacer between sections */
+.spacerTwo {
+    float: left; /* Float the spacer to the left */
+    width: 2.5%; /* Set the width */
+    height: 25vh; /* Set the height (Should be removed, only for demonstration) */
+}
+
+/* Styling for the main profile image container */
+.MainProfileImage {
+    text-align: center; /* Align the content to the center */
+    align-items: center; /* Align items in the container */
+}
+
+/* Styling for the display name */
+.MainProfileImage .displayName {
+    font-size: 30px; /* Set the font size */
+}
+
+/* Main content styling */
+main {
+    color: white; /* Set text color to white */
+}
+
+/* Styling for paragraphs inside main profile image */
+.MainProfileImage p {
+    text-align: center; /* Align paragraphs to the center */
+}
+
+/* Styling for the hire section */
+.hire {
+    font-family: "CaramelBurger", sans-serif; /* Specify font family */
+    padding-top: 5px; /* Add padding to the top */
+    font-size: 5vw; /* Set font size */
+    font-weight: 900; /* Set font weight */
+}
+
+/* Styling for h1 */
+h1 {
+    font-size: xx-large; /* Set font size */
+    margin-bottom: -0.125vh; /* Add negative margin to bottom */
+}
+
+/* Styling for h2 */
+h2 {
+    text-align: center; /* Align text to center */
+}
+
+/* Styling for description */
+.Description {
+    margin-left: 2vw; /* Add margin to the left */
+    margin-right: 2vw; /* Add margin to the right */
+    margin-bottom: 2vh; /* Add margin to the bottom */
+}
+
+/* Styling for footer */
+footer {
+    background-color: rgb(18, 30, 53); /* Set background color */
+    position: fixed; /* Position fixed */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    height: 80px; /* Set height */
+    display: flex; /* Flex display */
+    align-items: center; /* Align items vertically */
+    box-shadow: 0 0 25px 0 black; /* Add shadow */
+}
+
+/* Styling for copyright content */
+.copywriteContent {
+    color: rgb(13, 184, 252); /* Set text color */
+    text-align: center; /* Align text to center */
+    align-items: center; /* Align items */
+    margin: auto; /* Auto margin */
+    width: 50%; /* Set width */
+}
+
+/* Styling for custom anchor tags */
+.customAnchor {
+    text-decoration: none; /* Remove underline */
+    color: rgb(13, 184, 252); /* Set text color */
+}
+
+/* Hover effect for custom anchor tags */
+.customAnchor:hover {
+    transform: scale(1.1); /* Apply scale transformation on hover */
+}
+
+/* Navbar transition effect */
+.growNavbar {
+    transition: all .2s ease-in-out; /* Apply transition effect */
+}
+
+/* Navbar hover effect */
+.growNavbar:hover {
+    transform: scale(1.1); /* Apply scale transformation on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Container for skills section */
+.containerSkills {
+    display: flex; /* Flex display */
+}
+
+/* Columns for skills section */
+.columnSkills {
+    padding-left: 10vw; /* Add padding to the left */
+    flex: 1; /* Flex property */
+    margin: 10px; /* Add margin */
+    padding: 20px; /* Add padding */
+}
+
+/* Media query for screens larger than 900px */
+@media (min-width: 900px) {
+    /* Styling for main profile image */
+    .MainProfileImage {
+        background-color: rgb(18, 30, 53); /* Set background color */
+        align-items: center; /* Align items */
+        width: 25%; /* Set width */
+        margin-left: 30vw; /* Set margin left */
+        margin-right: 25vw; /* Set margin right */
+        min-width: 250px; /* Set minimum width */
+    }
+
+    /* Styling for header */
+    header {
+        background-color: rgb(18, 30, 53); /* Set background color */
+        position: fixed; /* Position fixed */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        height: 80px; /* Set height */
+        display: flex; /* Flex display */
+        align-items: center; /* Align items vertically */
+        box-shadow: 0 0 25px 0 black; /* Add shadow */
+        padding-bottom: 1.25vh; /* Add padding to the bottom */
+    }
+
+    /* Style all elements inside header */
+    header * {
+        display: inline; /* Display as inline */
+    }
+
+    /* Styling for list items in header */
+    header li {
+        margin-top: 5vh; /* Add margin to the top */
+        margin: 20px; /* Add margin */
+    }
+
+    /* Styling for anchor tags inside list items in header */
+    header li a {
+        color: rgb(13, 184, 252); /* Set text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1vw; /* Set font size */
+    }
+
+    /* Hover effect for anchor tags inside list items in header */
+    header li a:hover {
+        color: white; /* Change text color on hover */
+    }
+
+    /* Body styling for larger screens */
+    body {
+        height: 180vh; /* Set height */
+        background-image: url('../assets/images/Mountain\ Background.jpg'); /* Set background image */
+        background-size: cover; /* Make sure the background image covers the entire viewport */
+        font-family: sans-serif; /* Specify font family */
+        margin-top: 80px; /* Add margin to the top */
+        padding: 30px; /* Add padding */
+    }
+
+    /* Styling for columns for larger screens */
+    .columnsTwo {
+        float: left; /* Float the element to the left */
+        margin: 15px; /* Add margin */
+        width: 40.0%; /* Set width */
+        padding: 15px; /* Add padding */
+        height: 55vh; /* Set height (Should be removed, only for demonstration) */
+        align-items: center; /* Align items vertically */
+        border-radius: 25px; /* Apply border radius */
+        background-color: rgb(18, 30, 53); /* Set background color */
+        margin-bottom: 2vh; /* Add margin to the bottom */
+    }
+
+    /* Styling for spacer for larger screens */
+    .spacer {
+        float: left; /* Float the element to the left */
+        width: 5%; /* Set width */
+        height: 25vh; /* Set height (Should be removed, only for demonstration) */
+    }
+
+    /* Styling for skills section for larger screens */
+    .Skills {
+        float: left; /* Float the element to the left */
+        width: 45.0%; /* Set width */
+        height: 370px; /* Set height */
+        background-color: rgb(18, 30, 53); /* Set background color */
+        padding: 15px; /* Add padding */
+        border-radius: 25px; /* Apply border radius */
+        margin-left: 20vw; /* Set margin left */
+    }
+}
+
+/* Media query for screens smaller than 900px */
+@media (max-width: 900px) {
+    /* Styling for columns for smaller screens */
+    .columnsTwo {
+        float: left; /* Float the element to the left */
+        margin: 15px; /* Add margin */
+        width: 100.0%; /* Set width */
+        padding: 15px; /* Add padding */
+        height: 59vh; /* Set height (Should be removed, only for demonstration) */
+        align-items: center; /* Align items vertically */
+        border-radius: 25px; /* Apply border radius */
+        background-color: rgb(18, 30, 53); /* Set background color */
+        margin-bottom: 1vh; /* Add margin to the bottom */
+    }
+
+    /* Body styling for smaller screens */
+    body {
+        height: 240vh; /* Set height */
+        background-image: url('../assets/images/Mountain\ Background.jpg'); /* Set background image */
+        background-size: cover; /* Make sure the background image covers the entire viewport */
+        font-family: sans-serif; /* Specify font family */
+        margin-top: 250px; /* Add margin to the top */
+        padding: 30px; /* Add padding */
+        margin-bottom: 500px; /* Add margin to the bottom */
+    }
+
+    /* Styling for header for smaller screens */
+    header {
+        background-color: rgb(18, 30, 53); /* Set background color */
+        position: fixed; /* Position fixed */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        height: 250px; /* Set height */
+        display: flex; /* Flex display */
+        align-items: center; /* Align items vertically */
+        box-shadow: 0 0 25px 0 black; /* Add shadow */
+        padding-bottom: 1.5vh; /* Add padding to the bottom */
+    }
+
+    /* Style all elements inside header for smaller screens */
+    header * {
+        display: inline; /* Display as inline */
+    }
+
+    /* Styling for list items in header for smaller screens */
+    header li {
+        float: left; /* Float the element to the left */
+        margin-top: 2vh; /* Add margin to the top */
+        margin: 20px; /* Add margin */
+        width: 100%; /* Set width */
+    }
+
+    /* Styling for anchor tags inside list items in header for smaller screens */
+    header li a {
+        color: rgb(13, 184, 252); /* Set text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 3vw; /* Set font size */
+    }
+
+    /* Hover effect for anchor tags inside list items in header for smaller screens */
+    header li a:hover {
+        color: white; /* Change text color on hover */
+    }
+
+    /* Styling for main profile image for smaller screens */
+    .MainProfileImage {
+        background-color: rgb(18, 30, 53); /* Set background color */
+        align-items: center; /* Align items */
+        width: 25%; /* Set width */
+        margin-left: 25vw; /* Set margin left */
+        margin-right: 25vw; /* Set margin right */
+        min-width: 250px; /* Set minimum width */
+    }
+
+    /* Styling for header image for smaller screens */
+    header img {
+        width: 100%; /* Set width to 100% */
+        align-items: center; /* Align items */
+    }
+
+    /* Styling for skills section for smaller screens */
+    .Skills {
+        float: left; /* Float the element to the left */
+        width: 80.0%; /* Set width */
+        background-color: rgb(18, 30, 53); /* Set background color */
+        padding: 25px; /* Add padding */
+        border-radius: 25px; /* Apply border radius */
+        margin-left: 5vw; /* Set margin left */
+    }
+
+    /* Styling for spacer for smaller screens */
+    .spacer {
+        float: left; /* Float the element to the left */
+        width: 90%; /* Set width */
+        height: 5vh; /* Set height (Should be removed, only for demonstration) */
+    }
+
+    /* Adjust margin right for row for smaller screens */
+    .row {
+        margin-right: 10vw; /* Set margin right */
+    }
+}

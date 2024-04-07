@@ -1,0 +1,156 @@
+body {
+    height: 95vh;
+    background-image: url('../assets/images/Mountain\ Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin-top: 15vh;
+    padding: 20px;
+}
+
+h1{
+    font-family: 'CaramelBurger',sans-serif;
+    font-size: 3vw;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline-block;
+    display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    vertical-align:middle;
+    margin-left:20px;
+    border-radius: 5px;
+    
+}
+
+.messageLabel
+{
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+}
+label {
+    display:inline-block;
+    display: inline;     /* for IE7*/
+    zoom:1;              /* for IE7*/
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 140px;
+    min-width: 140px;
+    
+}
+
+input:focus{
+    outline-color:rgb(13,184,252);
+    outline-style: solid;
+    outline-width: 5px;
+}
+textarea{
+    width: 20vw;
+    max-width: 300px;
+    border-radius: 10px;
+}
+textarea:focus{
+    outline-color:rgb(13,184,252);
+    outline-style: solid;
+    outline-width: 5px;
+
+}
+
+
+button:hover{
+    background-color: #00a8e8;
+    transform: scale(1.1); 
+}
+
+.socialMedia{
+    margin-left: 28vw;
+    margin-right: 25vw;
+    align-items: center;
+    text-align: center;
+    width: 25vw;
+    background-color:  rgb(18,30,53);
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+}
+.socialMedia h2{
+    padding-top: 3vh;
+    font-family: 'CaramelBurger',sans-serif;
+    font-size: 3vw;
+}
+
+.grow 
+{ 
+    transition: all .2s ease-in-out; 
+}
+    
+.grow:hover 
+{ 
+    transform: scale(1.1); 
+    filter: invert(57%) sepia(68%) saturate(3186%) hue-rotate(161deg) brightness(93%) contrast(102%);
+}
+
+.icon{
+    width: 5vw;
+}
+
+button{
+    font-family: 'CaramelBurger',sans-serif;
+    font-size: 2vw;
+    margin-top: 2vh;
+    background-color: #007ea7;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 35px;
+    color: white;
+    transition: all .2s ease-in-out; 
+}
+@media (max-width: 900px) {
+    h1{
+        font-size: 5vw;
+    }
+    body {
+        height: 30vh;
+        background-image: url('../assets/images/Mountain\ Background.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        margin-top: 15vh;
+    }
+    .MainProfileImage{
+        margin-top: 15vh;
+        width: 60vw;
+        margin-right: 5vw;
+    }
+    .messageLabel{
+
+    }
+    textarea{
+        width: 1000vw;
+        max-width: 200px;
+        border-radius: 10px;
+    }
+    button{
+        width: 50vw;
+        height: 5vh;
+    }
+    .socialMedia{
+        margin-left: 28vw;
+        margin-right: 25vw;
+        align-items: center;
+        text-align: center;
+        width: 50vw;
+        background-color:  rgb(18,30,53);
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        
+    }
+    .icon{
+        width: 10vw;
+    }
+}

@@ -1,0 +1,60 @@
+
+
+h1{
+    font-family: 'CaramelBurger',sans-serif;
+    font-size: 3vw;
+}
+
+.price
+{
+    text-align: center;
+}
+.additionalDescription
+{
+    text-align: center;
+}
+@media (max-width: 900px) {
+    .columnsThree{
+        float: left;
+        margin: 15px;
+        width: 100.0%;
+        padding: 15px;
+        height:35vh; /* Should be removed. Only for demonstration */
+        
+        align-items: center; /* Align content vertically */
+        border-radius: 25px;
+        background-color: rgb(18,30,53);
+        margin-bottom:1vh ;
+    }
+    body {
+        height: 125vh;
+        background-image: url('../assets/images/Mountain\ Background.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 100px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 900px) {
+    .columnsThree{
+        float: left;
+        margin: 15px;
+        width: 30.0%;
+        padding: 15px;
+        height:35vh; /* Should be removed. Only for demonstration */
+        
+        align-items: center; /* Align content vertically */
+        border-radius: 25px;
+        background-color: rgb(18,30,53);
+        margin-bottom:1vh ;
+    }
+    body {
+        height: 95vh;
+        background-image: url('../assets/images/Mountain\ Background.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 100px;
+        padding: 30px;
+    }
+}
